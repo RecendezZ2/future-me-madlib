@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <b>
+            <h1>Future Me MADLIB: Software Developer Edition</h1>
+        </b>
+        <p>Fill in the blanks to see your future software developer story</p>
+
+        <form id="yourStory">
+            <div class="number">
+                <label for="number">Number Greater then 77:</label>
+                <input id="number" name="number" type="text"><br>
+            </div>
+            <div class="verb">
+                <label for="verb">Verb:</label>
+                <input id="verb" name="verb" type="text"><br>
+
+            </div>
+            <div class="problem">
+                <label for="problem">Problem your app solves:</label>
+                <input id="problem" name="problem" type="text"><br>
+            </div>
+            <div class="bug">
+                <label for="bug">Bug that took you hours to fix:</label>
+                <input id="bug" name="bug" type="text"><br>
+            </div>
+            <div class="error">
+                <label for="error">Error message you never want to see again:</label>
+                <input id="error" name="error" type="text"><br>
+            </div>
+            <div class="dream">
+                <label for="dream">Dream tech company you want to work for:</label>
+            </div>
+            <div class="language">
+                <label for="language">Programming language you learned next:</label>
+                <input id="language" name="language" type="text"><br>
+            </div>
+            <div class="">
+                <label for="favoriteColor">Favorite Color</label>
+                <input id="favoriteColor" name="favoriteColor" type="text">
+            </div>
+            <div class="number">
+                <label for="numb">How many people use this app</label>
+                <input id="numb" name="numb" type="text"><br>
+            </div>
+            <div class="sideProject">
+                <label for="sideProject">Name of a dream coding side project:</label>
+                <input id="sideProject" name="sideProject" type="text">
+            </div>
+
+            <fieldset>
+                <legend>
+                    <pre><code>const add = (a, b) =&gt; a + b;  Has a total of _____ parameters</code></pre>
+                </legend>
+                <label><input type="radio" name="two" value="one">6🤷🏻‍♀️7</label><br>
+                <label><input type="radio" name="two" value="two"> Two </label><br>
+                <label><input type="radio" name="two" value="aLot">174928302</label><br>
+
+            </fieldset><br>
+
+            <label for="work">After work, I drive my self_______:</label><br>
+            <select id="work" name="work">
+                <option value="drive">No where I do not drive</option>
+                <option value="home">home because I been at the office all day</option>
+                <option value="buy">to buy some hot-cheetos and a pickle </option>
+                <option value="gas">to the gas station because I forgot to put gas in this morning</option>
+
+                <option value="bus"> crazy because I take the bus and the person next to me smells funny</option>
+                <option value="beach">to the beach</option>
+            </select><br><br>
+            <p>
+
+                <button type="submit"> click to see the super long story about your future</button>
+            </p>
+
+            <p id="story"></p>
+
+        </form>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
