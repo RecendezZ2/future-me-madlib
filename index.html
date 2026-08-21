@@ -14,78 +14,86 @@
             <h1>Future Me MADLIB: Software Developer Edition</h1>
         </b>
         <p>Fill in the blanks to see your future software developer story</p>
+        <div class="newForm">
+            <form id="yourStory">
+                <div class="number">
+                    <label for="number">Number Greater then 77:</label>
+                    <input id="number" name="number" value="number" type="number" min="77" max="100"><br>
+                </div>
+                <label for="tel">Phone Number</label>
+                <input id="tel" name="tel" type="tel" required>
+                <div class="verb">
+                    <label for="verb">Verb:</label>
+                    <input id="verb" name="verb" type="text"><br>
 
-        <form id="yourStory">
-            <div class="number">
-                <label for="number">Number Greater then 77:</label>
-                <input id="number" name="number" type="text"><br>
-            </div>
-            <div class="verb">
-                <label for="verb">Verb:</label>
-                <input id="verb" name="verb" type="text"><br>
+                </div>
+                <div class="problem">
+                    <label for="problem">Problem your app solves:</label>
+                    <input id="problem" name="problem" type="text"><br>
+                </div>
+                <div class="bug">
+                    <label for="bug">Bug that took you hours to fix:</label>
+                    <input id="bug" name="bug" type="text"><br>
+                </div>
+                <div class="error">
+                    <label for="error">Error message you never want to see again:</label>
+                    <input id="error" name="error" type="text"><br>
+                </div>
+                <div class="dream">
+                    <label for="dream">Dream tech company you want to work for:</label>
+                    <textarea id="dream" name="dream" rows="5" cols="40"
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="language">
+                    <label for="language">Programming language you learned next:</label>
+                    <input id="language" name="language" type="textarea"><br>
+                </div>
+                <div class="">
+                    <label for="favoriteColor">Favorite Color</label>
+                    <input id="favoriteColor" name="favoriteColor" type="text">
+                </div>
 
-            </div>
-            <div class="problem">
-                <label for="problem">Problem your app solves:</label>
-                <input id="problem" name="problem" type="text"><br>
-            </div>
-            <div class="bug">
-                <label for="bug">Bug that took you hours to fix:</label>
-                <input id="bug" name="bug" type="text"><br>
-            </div>
-            <div class="error">
-                <label for="error">Error message you never want to see again:</label>
-                <input id="error" name="error" type="text"><br>
-            </div>
-            <div class="dream">
-                <label for="dream">Dream tech company you want to work for:</label>
-            </div>
-            <div class="language">
-                <label for="language">Programming language you learned next:</label>
-                <input id="language" name="language" type="text"><br>
-            </div>
-            <div class="">
-                <label for="favoriteColor">Favorite Color</label>
-                <input id="favoriteColor" name="favoriteColor" type="text">
-            </div>
-            <div class="number">
-                <label for="numb">How many people use this app</label>
-                <input id="numb" name="numb" type="number"><br>
-            </div>
-            <div class="sideProject">
-                <label for="sideProject">Name of a dream coding side project:</label>
-                <input id="sideProject" name="sideProject" type="text">
-            </div>
+                <div class="quantity">
+                    <label for="quantity">Quantity of eyelashes you leave around the house:</label>
+                    <input type="number" id="quantity" name="quantity">
+                </div>
 
-            <fieldset>
-                <legend>
-                    <!-- this is a question to answer in madlibs with the actual answer being two. But this entire line of creats a function named add that adds two values together const creates a variable that cant be reassigned the variable name is add it stores a function that we can use later by writing add A and B are the arrow functions parameters they are place holders that the values will receive = with = &  is the way to make an arrow sign show in the UI on the live page. Its a question asking how many parameters not the answer to the problem  -->
-                    <pre><code>const add = (a, b) =&gt; a + b;  Has a total of _____ parameters</code></pre>
-                </legend>
-                <label><input type="radio" name="two" value="one">6🤷🏻‍♀️7</label><br>
-                <label><input type="radio" name="two" value="two"> Two </label><br>
-                <label><input type="radio" name="two" value="aLot">174928302</label><br>
+                <div class="sideProject">
+                    <label for="sideProject">Name of a dream coding side project:</label>
+                    <input id="sideProject" name="sideProject" type="text">
+                </div>
 
-            </fieldset><br>
+                <fieldset>
+                    <legend>
+                        <!-- this is a question to answer in madlibs with the actual answer being two. But this entire line of creates a function named add that adds two values together const creates a variable that cant be reassigned the variable name is add it stores a function that we can use later by writing add A and B are the arrow functions parameters they are place holders that the values will receive = with = &  is the way to make an arrow sign show in the UI on the live page. Its a question asking how many parameters not the answer to the problem <pre> <code> HTML tags used together or separately to display computer code and preformatted text on a webpage.  -->
+                        <pre><code>const add = (a, b) =&gt; a + b;  Has a total of _____ parameters</code></pre>
+                    </legend>
+                    <label><input type="radio" name="btn" value="btn">6🤷🏻‍♀️7</label><br>
+                    <label><input type="radio" name="btn" value="btn"> Two </label><br>
+                    <label><input type="radio" name="btn" value="btn">174928302</label><br>
 
-            <label for="work">After work, I drive my self_______:</label><br>
-            <select id="work" name="work">
-                <option value="drive">No where I do not drive</option>
-                <option value="home">home because I been at the office all day</option>
-                <option value="buy">to buy some hot-cheetos and a pickle </option>
-                <option value="gas">to the gas station because I forgot to put gas in this morning</option>
+                </fieldset><br>
 
-                <option value="bus"> crazy because I take the bus and the person next to me smells funny</option>
-                <option value="beach">to the beach</option>
-            </select><br><br>
-            <p>
+                <label for="work">After work, I drive my self_______:</label><br>
+                <select id="work" name="work">
+                    <option value="drive">No where I do not drive</option>
+                    <option value="home">home because I been at the office all day</option>
+                    <option value="buy">to buy some hot-cheetos and a pickle </option>
+                    <option value="gas">to the gas station because I forgot to put gas in this morning</option>
 
-                <button type="submit"> click to see the super long story about your future</button>
-            </p>
+                    <option value="bus"> crazy because I take the bus and the person next to me smells funny</option>
+                    <option value="beach">to the beach</option>
+                </select><br><br>
+                <p>
 
-            <p id="story"></p>
+                    <button type="submit"> click to see the super long story about your future</button>
+                </p>
 
-        </form>
+                <p id="story"></p>
+
+            </form>
+        </div>
+
 
     </main>
     <script src="script.js"></script>
